@@ -111,3 +111,24 @@ body {
     .pizarra { padding: 20px; }
     .fila { font-size: 1.2rem; }
 }
+/* Caja de entrada */
+.entrada {
+    margin-bottom: 20px;
+}
+
+.entrada input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 3px solid #00acc1;
+    outline: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.entrada input:focus {
+    border-color: #ff5722;
+    background-color: #fffde7;
+    transform: scale(1.05);
+}
