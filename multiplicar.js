@@ -1,8 +1,7 @@
 function generarTablas() {
-  let numero = document.getElementById("txtNumero");
-  let valorNumero = numero.value;
-  let enteroNumero = parseInt(valorNumero);
+  let numero = recuperaTexto("txtNumero");
 
+  let enteroNumero = recuperarEntero("txtNumero");
 
   if (isNaN(enteroNumero)) {
     document.getElementById("miTabla").innerHTML =
