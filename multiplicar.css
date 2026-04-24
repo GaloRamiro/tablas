@@ -1,0 +1,113 @@
+/* Importamos una fuente redonda y amigable */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #e0f7fa; /* Azul cielo */
+    background-image: radial-gradient(#b2ebf2 2px, transparent 2px);
+    background-size: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Botón con estilo divertido */
+.btn-probar {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-bottom: 6px solid #e64a19;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.btn-probar:active {
+    border-bottom-width: 0px;
+    transform: translateY(6px);
+}
+
+/* Contenedor Pizarra */
+.pizarra {
+    background: white;
+    padding: 30px;
+    border-radius: 40px;
+    border: 8px solid #ffeb3b; /* Marco amarillo */
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 10px 0px #cfd8dc;
+}
+
+.titulo {
+    color: #00acc1;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* IDENTIFICACIÓN EN EL HTML: CONTENEDOR */
+.tabla {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espaciado entre filas */
+}
+
+/* IDENTIFICACIÓN EN EL HTML: ITEMS */
+.fila {
+    background-color: #f1f8e9;
+    color: #333;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 3px solid #8bc34a; /* Verde */
+    transition: all 0.3s ease;
+}
+
+.fila:hover {
+    background-color: #fffde7;
+    border-color: #ffeb3b;
+    transform: scale(1.05);
+    color: #ff5722;
+}
+
+/* Pie de página con tu firma */
+.pie-pagina {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.nickname {
+    display: inline-block;
+    background-color: #00acc1;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: 2px 2px 0px #006064;
+    transition: transform 0.3s ease;
+}
+
+.nickname:hover {
+    transform: rotate(-5deg) scale(1.1);
+    background-color: #ff4081;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .pizarra { padding: 20px; }
+    .fila { font-size: 1.2rem; }
+}
